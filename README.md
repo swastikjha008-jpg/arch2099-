@@ -1,99 +1,68 @@
-# ARCH//2099
+```
+                   -`
+                  .o+`
+                 `ooo/
+                `+oooo:
+               `+oooooo:
+               -+oooooo+:
+             `/:-:++oooo+:
+            `/++++/+++++++:
+           `/++++++++++++++:
+          `/+++ooooooooooooo/`
+         ./ooosssso++osssssso+`
+        .oossssso-````/ossssss+`
+       -osssssso.      :ssssssso.
+      :osssssso/        osssso+++.
+     /ossssssss/        +ssssooo/-
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:
+ `++:.                           `-/+/
+ .`                                 `/
+```
 
-> Your next-gen Linux desktop is here.
+# ARCH//2099 🐧
 
-A polished, responsive, cyberpunk-themed landing page for a fictional next-generation Linux distribution. Built as a portfolio piece to demonstrate frontend implementation, component architecture, and motion design.
+A cyberpunk-themed Linux landing page — for a distro that doesn't exist.
 
-**[Live demo →](#)** &nbsp;•&nbsp; Built with Next.js, TypeScript, Tailwind CSS, Framer Motion, and Three.js
+## What this actually is
 
----
+Not a real OS, not a real project, no backend, no install script that does anything.
+This is a **design + frontend practice piece**. I wanted to see if I could take a
+fictional product brief and turn it into something that felt like a real, polished
+landing page — nice motion, a proper component structure, something worth putting
+on GitHub. That's it. 🎨
 
-## Preview
+## Why Arch, though
 
-<!--
-Add a screenshot or screen recording here once deployed, e.g.:
-![ARCH//2099 hero section](./docs/screenshot-hero.png)
--->
+I run Arch Linux 💙 and genuinely enjoy the whole ecosystem around it — the AUR,
+the wiki, ricing, tiling window managers, `neofetch`/`fastfetch` screenshots, the
+whole aesthetic that shows up in r/unixporn. This project is basically that love
+letter, wrapped in Next.js instead of a `pacman -S` command. ⚙️
 
 ## Stack
 
-| Layer        | Choice                                   |
-| ------------ | ----------------------------------------- |
-| Framework    | Next.js 14 (App Router)                   |
-| Language     | TypeScript                                |
-| Styling      | Tailwind CSS                              |
-| Motion       | Framer Motion                             |
-| 3D / WebGL   | Three.js + postprocessing (Hyperspeed bg) |
-| Icons        | lucide-react                              |
-| Fonts        | Chakra Petch, Inter, JetBrains Mono        |
+- Next.js 14 (App Router) + TypeScript
+- Tailwind CSS
+- Framer Motion
+- Three.js (the hyperspeed WebGL background in the hero)
 
-## Features
-
-- Full-viewport WebGL "hyperspeed" background in the hero, rendered with Three.js and bloom/SMAA postprocessing
-- Glitch-effect wordmark, animated terminal boot sequence, and scroll-triggered animated stat counters
-- Gooey, particle-based navigation menu
-- Fully responsive: mobile, tablet, laptop, and large-desktop breakpoints
-- Reduced-motion support (`prefers-reduced-motion`) baked into global styles
-- Custom glitch-style 404 page
-- Clean component architecture — one component, one job
-
-## Project structure
-
-```
-app/
-  layout.tsx          — fonts, metadata, root shell
-  page.tsx             — assembles all landing page sections
-  not-found.tsx         — custom 404 page
-  globals.css           — design tokens, overlays, keyframes
-components/
-  Navbar.tsx            — logo, gooey nav, CTA, mobile menu
-  Hero.tsx               — hero section (Hyperspeed bg + terminal panel)
-  HyperspeedBackground.tsx — client wrapper that lazy-loads the WebGL scene
-  Hyperspeed.tsx          — the WebGL "hyperspeed" effect itself
-  GlitchText.tsx          — glitch-styled text component
-  FuzzyText.tsx            — canvas-based fuzzy text (used on the 404 page)
-  GooeyNav.tsx              — particle-based gooey navigation
-  FeatureCard.tsx / FeaturesSection.tsx
-  StatsGrid.tsx
-  TerminalPanel.tsx
-  PhilosophySection.tsx
-  CTASection.tsx
-  Footer.tsx
-  ui/                       — Button, SectionHeading, GlowBorder, AnimatedCounter
-lib/
-  data.ts                    — all copy/content, separated from presentation
-```
-
-## Getting started
+## Running it
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open `http://localhost:3000`.
 
-## Build
+## Notes
 
-```bash
-npm run build
-npm run start
-```
+- All the buttons are decorative — there's no actual install script, no GitHub repo
+  behind "View on GitHub," no docs behind "Documentation." It's a landing page shell.
+- Built to practice: layout, responsiveness, component architecture, and restrained
+  motion — not to launch an actual product. 🔧
+- If you also like Arch and/or cyberpunk UI, feel free to fork it and make it yours.
 
-## Deploying to Render
+---
 
-1. Push this repository to GitHub.
-2. In Render, create a new **Web Service** from the repo.
-3. Settings:
-   - **Build command:** `npm install && npm run build`
-   - **Start command:** `npm run start`
-   - **Node version:** 18+
-4. Render will assign a port automatically — Next.js reads `process.env.PORT` out of the box, no config needed.
-
-## Deploying to Vercel
-
-This is a standard Next.js app — importing the repo into Vercel and clicking **Deploy** is all that's required.
-
-## License
-
-MIT — do whatever you'd like with this.
+🖤 built during a late-night rabbit hole, not a startup pitch.
